@@ -15,9 +15,9 @@ spec:
   destination:
     server: https://kubernetes.default.svc
     namespace: kube-system  # The namespace where the Metrics Server will be deployed
-  syncPolicy:
-    automated:
-      prune: true
-      selfHeal: true
+#  syncPolicy:
+#    automated:
+#      prune: true
+#      selfHeal: true
 
 
