@@ -7,7 +7,7 @@ spec:
   project: default
   source:
     repoURL: https://github.com/kubernetes-sigs/metrics-server.git
-    targetRevision: main  # or the branch/tag you want to use
+    targetRevision: v0.7.2  # or the branch/tag you want to use
     path: charts/metrics-server  # Adjust if the chart is located in a different path
     helm:
       valueFiles:
