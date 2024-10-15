@@ -9,7 +9,7 @@ spec:
     server: https://kubernetes.default.svc
   source:
     repoURL: https://github.com/chesney/LFS256-code/argocd-config-repo
-    targetRevision: main
+    targetRevision: head
     path: . # Path to values.yaml in the config repo
     chart: argo-cd
     helm:
