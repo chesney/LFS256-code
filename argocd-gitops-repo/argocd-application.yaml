@@ -8,7 +8,7 @@ spec:
     namespace: argocd
     server: https://kubernetes.default.svc
   source:
-    repoURL: https://github.com/chesney/argocd-config-repo
+    repoURL: https://github.com/chesney/LFS256-code/argocd-config-repo 
     targetRevision: HEAD
     path: . # Path to values.yaml in the config repo
     chart: argo-cd
