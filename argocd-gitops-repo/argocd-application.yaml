@@ -16,7 +16,3 @@ spec:
       valueFiles:
         - values.yaml
   project: default
-  syncPolicy:
-    automated:
-      prune: true
-      selfHeal: true
