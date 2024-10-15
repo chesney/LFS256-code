@@ -1,0 +1,23 @@
+piVersion: argoproj.io/v1alpha1
+kind: Application
+metadata:
+  name: metrics-server
+  namespace: argocd
+spec:
+  project: default
+  source:
+    repoURL: https://github.com/kubernetes-sigs/metrics-server.git
+    targetRevision: main  # or the branch/tag you want to use
+    path: charts/metrics-server  # Adjust if the chart is located in a different path
+    helm:
+      valueFiles:
+        - values.yaml  # Path to your values.yaml file
+  destination:
+    server: https://kubernetes.default.svc
+    namespace: kube-system  # The namespace where the Metrics Server will be deployed
+  syncPolicy:
+    automated:
+      prune: true
+      selfHeal: true
+
+

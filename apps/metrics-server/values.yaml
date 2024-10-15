@@ -1,0 +1,10 @@
+# Custom values for the Metrics Server Helm chart
+
+# If you're using a self-signed certificate for the Kubelet, you can set this to true
+kubeletInsecureTLS: true
+
+# You can customize other parameters here
+args:
+  - --kubelet-insecure-tls=true
+  # Add other arguments as needed
+
