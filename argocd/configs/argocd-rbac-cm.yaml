@@ -12,6 +12,6 @@ metadata:
   namespace: argocd
 data:
   policy.csv: |
-    p,role:synconly,applications,sync,*/*,allow
-    g,developer,role:synconly
+    p,role:synconly,applications,sync,*/*,allow # This line defines a rule that grants only the sync action on applications to the synconly role.`
+    g,developer,role:synconly #Associates the developer group with the synconly role, allowing them to sync applications only.
   policy.default: role:readonly
